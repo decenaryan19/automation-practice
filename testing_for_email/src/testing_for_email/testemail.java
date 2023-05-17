@@ -26,11 +26,13 @@ public class testemail {
 //		insert text using id
 		driver.findElement(By.id("pass")).sendKeys("ewa.com");
 		
+//		delay type
 		Thread.sleep(2000);
 		
 //		click button using class name
 		driver.findElement(By.name("login")).click();
 		
+//		delay click
 		Thread.sleep(2000);
 		
 		String at = driver.getTitle();
