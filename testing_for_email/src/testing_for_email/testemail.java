@@ -19,20 +19,22 @@ public class testemail {
 		driver.manage().window().maximize();
 		
 //		launch website
-		driver.get("https://www.google.com/");
-		
+		driver.get("https://www.facebook.com/");
+
 //		insert text using id
-		driver.findElement(By.id("APjFqb")).sendKeys("Honda click");
+		driver.findElement(By.id("email")).sendKeys("yangzxc019@gmail.com");
+//		insert text using id
+		driver.findElement(By.id("pass")).sendKeys("ewa.com");
 		
-//		Thread.sleep(2000);
+		Thread.sleep(2000);
 		
 //		click button using class name
-		driver.findElement(By.name("btnK")).click();
+		driver.findElement(By.name("login")).click();
 		
-//		Thread.sleep(2000);
+		Thread.sleep(2000);
 		
 		String at = driver.getTitle();
-		String et = "gmail";
+		String et = "facebook";
 		
 		driver.close();
 		
